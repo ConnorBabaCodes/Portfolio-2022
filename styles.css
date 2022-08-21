@@ -1,0 +1,82 @@
+::root {
+    
+}
+/* clear default styling*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+body {
+    height: 100vh;
+}
+/* header stuff*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7520d6;
+    
+}
+
+.logo {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    margin-right: 10px;
+    gap: 0px 5px;
+    align-items: center;
+}
+
+/* hero image stuff*/
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-img2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 800px;
+}
+.hero-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+hr {
+    border-color: green;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hero-text {
+
+    color: white;
+}
+
+.name {
+    color: goldenrod;
+}
+
+.hero-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* skills section */
+
+.skills-container {
+    display: grid;
+}
