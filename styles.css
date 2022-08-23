@@ -36,6 +36,7 @@ body {
     align-items: center;
     
     
+    
 }
 
 
@@ -43,6 +44,8 @@ body {
     margin-left: 2vw;
     margin-right: 8vw;
     color: turquoise;
+   
+
 }
 
 .left-nav {
@@ -52,7 +55,7 @@ body {
 .header-left, .header-right{
     margin-top: 20px;
     display: flex;
-    
+  
     
 }
 
@@ -99,6 +102,7 @@ ul {
 
 .name {
     color: goldenrod;
+    border-bottom: 2px solid green;
 }
 
 .hero-nav {
@@ -210,7 +214,13 @@ hr {
 section {
 
     width: 100%;
-    height: 600px;
+    
+}
+
+.section-heading {
+    width: 100%;
+    
+    
 }
 
 .section-heading {
@@ -218,7 +228,79 @@ section {
     padding: 40px 0 80px 0;
 }
 
+/* Featured project*/
+
+#featured {
+    height: 500px;
+}
+
+.featured-project-section {
+    width: 100%;
+    display: flex;
+    
+
+}
+
+.featured-project-left {
+    width: 60%;
+    position: relative;
+}
+
+.featured-project-left h5 {
+    color: var(--main-color);
+    font-weight: bolder;
+    line
+}
+
+.featured-project-right {
+    width: 40%;
+    position: relative;
+}
+
+.featured-project-info {
+    width: 50%;
+    height: 40%;
+    margin-top: 12%;
+    margin-left: 30%;
+}
+
+.featured-project-description {
+    margin-top: 10%;
+    line-height: 1.6;
+}
+
+.featured-project-left::before {
+    content: "";
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: pink;
+    opacity: 30%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.featured-project-right img{
+    border-radius: 2%;
+    position: absolute;
+    margin-right: 30px;
+    bottom: 0;
+    right: 0;
+}
+
+
+
 /* project section */
+
+#projects {
+    background-color: pink;
+    height: 1000px;
+}
+
+.project-section {
+    margin-top: -3em;
+}
 
 .project-container {
     display: flex;
@@ -226,16 +308,40 @@ section {
 }
 .project-box {
     width: 20%;
-    height: 20%;
+    height: 600px;
     text-align: center;
+    
+    box-shadow: .5px .5px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2%;
 }
 
+
 .project-box > img {
-    width: 100%;
+    width: 80%;
     height: 200px;
 
 }
 
+.project-name {
+    margin: 10px 0px 10px 0px;
+    border-bottom: 1px solid black;
+}
 
+.project-description, .technologies {
+    margin: 20px 0 20px 0px;
+}
 
+.project-button {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: pink;
+}
 
+.project-button:hover {
+    cursor: pointer;
+}
