@@ -3,17 +3,16 @@
 
 <head>
     <meta charset-"utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale 1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/facca52092.js" crossorigin="anonymous"></script>
     <title>Connor Baba's Portfolio Site</title>
 </head>
 
 <body>
-    <header>
-
-    </header>
+  
     <main>
+      
 
         <div class="hero-container">
             <div class="hero-left">
@@ -21,10 +20,9 @@
                 <div class="logo header-left">
                     
                     <h3><span class="home">Connor Baba</span></h3>
-                    <h3>Skills</h3>
-                    <h3>Projects</h3>
-                    <h3>Reviews</h3>
-                    <h3>Resume</h3>
+                    <h3 class="left-nav">Projects</h3>
+                    <h3 class="left-nav">Reviews</h3>
+                    <h3 class="left-nav">Resume</h3>
                     
                 </div>
                 </header>
@@ -33,16 +31,7 @@
                     <h1 class="hero-text">Hi, I'm <span class="name">Connor</span>, a Web Developer</h1>
                 </div>
                 <hr>
-                <div class="hero-nav">
-                    <div class="hero-nav-item hero-icon">
-                        <i class="fa-brands fa-linkedin fa-2x"></i>
-                    </div>
-                   
-                    <div class="hero-nav-item hero-icon">
-                        <i class="fa-brands fa-square-github fa-2x"></i>
-                    </div>
-                    
-                </div>
+             
             </div>
         </div>
         <div class="hero-mid hero-mid-main shapes">
@@ -94,18 +83,15 @@
             <div class="header-nav header-right">
                 <nav>
                     <ul>
-                        <h3>Skills</h3>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <h3>LinkedIn</h3>
                     </ul>
                     <ul>
-                        <h3>Projects</h3>
+                        <i class="fa-brands fa-square-github"></i>
+                        <h3>Github</h3>
                     </ul>
                     <ul>
-                        <h3>About</h3>
-                    </ul>
-                    <ul>
-                        <h3>Reviews</h3>
-                    </ul>
-                    <ul>
+                        <i class="fa-solid fa-file"></i>
                         <h3>Resume</h3>
                     </ul>
                 </nav>
@@ -113,49 +99,51 @@
             </header>
         </div>
         </div>
-        <div class="skills-container section">
-                <div class="skill">
-                    <div class="skill-icon-container">
-                        <i class="fa-brands fa-html5 skill-icon fa-5x"></i>
-                    </div>
-                    <h3 class="skill-name">HTML5</h3>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon-container">
-                        <i class="fa-brands fa-css3-alt skill-icon fa-5x"></i>
-                    </div>
-                    <h3 class="skill-name">CSS3</h3>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon-container">
-                        <i class="fa-brands fa-square-js  skill-icon fa-5x"></i>
-                    </div>
-                    <h3 class="skill-name">Javascript</h3>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon-container">
-                        <i class="fa-brands fa-bootstrap skill-icon fa-5x"></i>
-                    </div>
-                    <h3 class="skill-name">Bootstrap</h3>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon-container">
-                        <i class="fa-brands fa-react fa-5x"></i>
-                    </div>
-                    <h3 class="skill-name">React</h3>
-                </div>
-                <div class="skill">
-                    <div class="skill-icon-container">
-                        <i class="fa-solid fa-water skill-icon fa-5x"></i>
-                    </div>
-                    <h3 class="skill-name">Shopify Liquid</h3>
-                </div>
+        
+        <section class="project-section">
+            <h1 class="section-heading">Projects</h1>
+            <div class="project-container">
+            <div class="project-box">
+                <img src="placeholder.jpg">
+                <h2>Project Name</h2>
+                <p class="project-description">this is a placeholder description</p>
+                <div class="technologies">js, html, css</div>
+                <div class="code-git">Demo Code</div>
+            </div>
+            <div class="project-box">
+                <img src="placeholder.jpg">
+                <h2>Project Name</h2>
+                <p class="project-description">this is a placeholder description</p>
+                <div class="technologies">js, html, css</div>
+                <div class="code-git">Demo Code</div>
+            </div>
         </div>
-        <div class="projects container"><h1>This is where all of my projects will go someday</h1></div>
+        </section>
         <div class="about"><h1>This will someday be an about section</h1></div>
         <div class="reviews"><h1>This will be a slider with a bunch of reviews</h1></div>
+
+
+
+      
+
+
+
         <div class="resume"><h1>Right now, it says resume, but maybe not later</h1></div>
-        <div class="footer"><h1>This will be a footer</h1></div>
+        <footer>
+            <nav>
+                <ul>
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                    <h3>LinkedIn</h3>
+                </ul>
+                <ul>
+                    <i class="fa-brands fa-square-github fa-2x"></i>
+                    <h3>Github</h3>
+                </ul>
+                <ul>
+                    <i class="fa-solid fa-file fa-2x"></i>
+                    <h3>Resume</h3>
+                </ul>
+            </nav></footer>
     </div>
     </main>
 </body>
