@@ -9,7 +9,7 @@
 * {
     margin: 0;
     padding: 0;
-   
+    
     font-family: sans-serif;
 }
 
@@ -27,59 +27,96 @@ body {
 /* header stuff*/
 
 
-
-
-
-.header {
+.sticky-header {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    position: fixed;
+    top: 0;
+    z-index: 1;
     
     
 }
+.left-sticky {
+    width: 50vw;
+    display: flex;
+    background-color: var(--main-color);
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0 30px 0;
+}
 
+.middle-sticky {
+    display:
+}
+
+.right-sticky {
+    display: flex;
+    margin: auto;
+    
+    
+}
+.emptyshape {
+    width: 120px;
+    
+}
+
+.sticky-white {
+    background-color: white;
+}
+
+.sticky-fill {
+    background-color: var(--main-color)
+}
 
 .home {
-    margin-left: 2vw;
-    margin-right: 8vw;
+    margin-right: 100px;
     color: turquoise;
-   
-
 }
 
 .left-nav {
     color: tan
 }
 
-.header-left, .header-right{
-    margin-top: 20px;
-    display: flex;
-  
-    
+
+.end-of-left {
+    margin-right: 400px;
 }
-
-
-
-.header-left {
-    justify-content: space-evenly;
-    
-}
-
 
 
 nav {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 ul {
     display: flex;
-    margin-right: 10px;
-    gap: 0px 5px;
-    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    
+}
+ul h3 {
+    margin: auto;
+    margin-left: 5px;
 }
 
+
+
 /* hero stuff*/
+
+.hero-container {
+width: 100%;
+}
+
+.hero-left {
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+
+
+
+
 
 .hero-container {
     height: 800px;
@@ -117,8 +154,8 @@ hr {
 }
 
 .hero-left {
-    width: 70%;
-    height: 100%;
+    width: 50vw;
+    
     background-color: var(--main-color);
 }
 
@@ -148,7 +185,10 @@ hr {
 .shape {
     width: 120px;
     height: 120px;
+    z-index: 2;
 }
+
+
 
 .square {
     border-radius: 15%;
